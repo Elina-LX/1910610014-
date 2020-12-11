@@ -1,0 +1,125 @@
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: 0;
+    background-image:url(./微信图片_20201021192744.jpg);
+    background-size:cover;
+}
+#game{                      
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+.welcome button{              
+    background-color: #621ba2;
+    color: #fff;
+    font-size: 2em;
+    border-radius: 5px;
+    letter-spacing: 0.5em;
+    text-align:center;
+}
+td{
+    border:#999 1px solid;
+    width:20px;
+    height:20px;
+    background-color: #999;
+    box-sizing: border-box;
+    position: relative;
+    padding:0;
+}
+.win-panel{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(175, 32, 92);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
+.banner{
+    margin-top: 20px;
+    font-size: 2em;
+    height: 1.5em;
+}
+.welcome button{
+    background-color: rgb(179, 96, 137);
+    color:rgb(189, 191, 192);
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 0.5em;
+    border-radius: 5px;
+
+}
+td {
+    border:blueviolet 1px solid; 
+    width: 20px;
+    height: 20px;
+    background-color:rgb(139, 68, 108);
+    box-sizing: border-box;
+    position: relative;
+    padding:0;
+
+}
+td > .cell{
+    position: absolute;
+    left: 0;
+    right: 0 ;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    color:rgb(139, 68, 108);
+    
+}
+td>.cell.clear{
+    background-color: #ffffff;
+    color:rgb(139, 68, 108);
+}
+td>.cell.exploded{
+    background-color: red;
+    color: #999;
+}
+table.exploded,table.exploded td{
+    background-color: rgb(236, 114, 145);
+}
+.loser{position: fixed;
+    background-color: rgb(224, 137, 159);
+    left: 350px;
+    right: 350px;
+    top: 185px;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.loser h3{
+    font-size: 3em;
+}
+.winner{position: fixed;
+    background-color: rgb(224, 137, 159);
+    left: 350px;
+    right: 350px;
+    top: 185px;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.winner h3{
+    font-size: 3em;
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+
+}
+.welcome button{
+    margin: 20px;;
+}
